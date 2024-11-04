@@ -21,26 +21,26 @@ Deploy the API3PriceFeed.sol contract.  Once deployed, you want to choose the pr
 Call the `setProxyAddress` with the address for the price feed.  You can then read the data by calling `readDataFeed`
 
 ```
-npx hardhat ignition deploy ignition/modules/API3PriceFeed.js --network sepolia
+npx hardhat ignition deploy ignition/modules/API3PriceFeed.js --network metissepolia
 ```
 You also have the option to verify all deployed contracts after deployment with:
 ```
-npx hardhat ignition verify chain-11155111
+npx hardhat ignition verify chain-59902
 ```
 ## Using API3 price oracle with other Oracle formats
 ### Deploy the other oracle smart contract
 You will need to deploy the `OtherOracle` contract using the other oracle setup.  We have it set to default the ETH/USD price feed on Sepolia
 
 ```
-npx hardhat ignition deploy ignition/modules/OtherOracle.js --network sepolia
+npx hardhat ignition deploy ignition/modules/OtherOracle.js --network metissepolia
 ```
 
 ### How to use the adaptor
 
-Deploy the `Adaptor.sol` contract with the the proxy contract address ([API3 Marketplace](https://market.api3.org/dapis)) that you want it to adapt to the deployed `OtherOracle` contract. For this demo, we are using ETH/USD price feed on Sepolia.
+Deploy the `Adaptor.sol` contract with the the proxy contract address ([API3 Marketplace](https://market.api3.org/dapis)) that you want it to adapt to the deployed `OtherOracle` contract. For this demo, we are using ETH/USD price feed on metissepolia.
 
 ```
-npx hardhat ignition deploy ignition/modules/Adaptor.js --network sepolia  
+npx hardhat ignition deploy ignition/modules/Adaptor.js --network metissepolia  
 ```
 
 Once you have deployed your `Adaptor` contract, you will use that deployed contract address
