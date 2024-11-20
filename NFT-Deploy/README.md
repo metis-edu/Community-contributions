@@ -35,13 +35,13 @@ Go to our Contracts folder above and choose the desired contract:
 
 Copy the code and paste it into a new file in Remix:
 - For example, create `MyERC721.sol` or `MyERC1155.sol` in Remix and paste the contract code.
-![contract code](images/contractcode.png)
+![contract code](./images/contractcode.png)
 
 ### 3. Compile the Contract
 - In Remix, navigate to the **Solidity Compiler** tab.
 - Ensure the Solidity version matches the contract (e.g., `0.8.x`).
 - Click **Compile MyERC721.sol** or **Compile MyERC1155.sol**.
-![compile contract](images/compile.png)
+![compile contract](./images/compile.png)
 
 ### 4. Deploy the Contract
 - Go to the **Deploy & Run Transactions** tab.
@@ -49,7 +49,7 @@ Copy the code and paste it into a new file in Remix:
 - Ensure Metamask is set to the **Metis Andromeda** network.
 - Select the contract (e.g., `MyERC721` or `MyERC1155`) in the dropdown.
 - Click **Deploy** and confirm the transaction in Metamask.
-![deploy contract](images/deploy.png)
+![deploy contract](./images/deploy.png)
 
 ---
 
@@ -84,7 +84,7 @@ Once your contract is deployed, it will appear in the **Deployed Contracts** sec
 - **Transfer Tokens**  
   Use the `safeTransferFrom` function to transfer tokens to another address securely.
 
-![Interact functions](images/functions.png)
+![Interact functions](./images/functions.png)
 
 ---
 
