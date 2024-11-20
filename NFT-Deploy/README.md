@@ -58,10 +58,10 @@ Copy the code and paste it into a new file in Remix:
 Before deploying, you can modify the contract code to fit your needs:
 - Change the token name and symbol for ERC-721:
   ```solidity
-  constructor() ERC721("MyNFT", "MNFT") {}````
+  constructor() ERC721("MyNFT", "MNFT") {}
 - Customize URI handling for ERC-1155:
   ```solidity
-constructor() ERC1155("https://myapi.com/metadata/{id}.json") {}````
+  constructor() ERC1155("https://myapi.com/metadata/{id}.json") {}
 
 # Interacting with Your Smart Contract
 
